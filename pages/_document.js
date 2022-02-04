@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-          <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
         </Head>
         <body>
           <Main />

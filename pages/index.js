@@ -84,11 +84,7 @@ const Index = ({posts}) => {
   const styles = useStyles()
   const { t } = useTranslation("common")
 
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
-
-  console.log('Quantity of posts', posts.data.length)
+  if (router.isFallback) return <div>Loading...</div>
 
   return (
     <>
@@ -127,7 +123,7 @@ const Index = ({posts}) => {
       </Typography>
       {i.imgUrl && <Image src={i.imgUrl} />}
       </div>
-    </Item>) : "postList.noPosts"} 
+    </Item>) : <h2>{t("postList.noPosts")}</h2>} 
     </>
   );
 }

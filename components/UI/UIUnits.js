@@ -1,7 +1,7 @@
 import { List, ListItemText, TextField, Typography, Container } from "@mui/material";
 import { ScaleLoader, BeatLoader } from "react-spinners";
 import Link from "next/link";
-import { makeStyles, useTheme } from "@mui/styles";
+import { makeStyles, useTheme } from "@mui/styles"
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -93,8 +93,8 @@ const subscribeInputStyles = makeStyles(theme => ({
 
 
 export const MyContainer = ({children}) => {
-  const theme = useTheme()
-  const lg = theme.breakpoints.up('lg')
+  const theme = useTheme();
+  const lg = theme.breakpoints.up('lg');
   return <Container style={{  maxWidth: lg && 1280 }}>
     {children}
   </Container>
@@ -104,7 +104,7 @@ export const MyContainer = ({children}) => {
 export const SpinnerLoadPage = ({ loadingStatus }) => {
   const styles = spinnerStyles();
   return (
-    <div className={styles.main}>
+    <div className={styles.main} style={{ textAlign: 'center' }}>
       <Typography component="h1" className={styles.pageTitle}>
         Loading...
       </Typography>
