@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import Link from "../../src/Link";
 import { useRouter } from "next/router";
 import { Item, SectionTitle } from "../../components/UI/UIUnits"
-import { useTheme, makeStyles } from "@mui/styles"
+import { makeStyles } from "@mui/styles"
 import Image from "next/image";
 import moment from 'moment'
 import 'moment/locale/en-gb'

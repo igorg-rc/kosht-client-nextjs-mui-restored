@@ -40,6 +40,11 @@ body {
   color: '#2E3A59' !important;
 }
 
+.header {
+  background: #5669FF !important;
+  width: 100% !important;
+}
+
 /* .jss10 {
   border: 1px solid #F9F9F9 !important;
 } */

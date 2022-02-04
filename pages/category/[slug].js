@@ -75,8 +75,8 @@ export default function PostsByCategories({slug, posts}) {
   const router = useRouter()
   return (
     <div>
-    {posts?.map(i => <Item style={{ border: '1px sold #000' }} key={i._id}>
-      <div style={{ border: '1px sold #000', padding: '20px 0' }}>
+    {posts?.map(i => <Item key={i._id}>
+      <div style={{ padding: '20px 0' }}>
       <Typography paragraph className={styles.topBage}>
         {i.categories.map(item => (
           <Link 
@@ -115,7 +115,7 @@ export default function PostsByCategories({slug, posts}) {
   )
 }
 
-export async function getStaticPaths({locales})  {
+export async function getStaticPaths({locale})  {
   const res = await axios.get(`${API_LINK}/categories`)
   const categories = res.data
 

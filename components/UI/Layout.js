@@ -9,7 +9,7 @@ import theme from '../../src/theme'
 export default function Layout({ children }) {
   return <ThemeProvider theme={theme}>
     <MyContainer>
-      <Header />
+      <Header className="header" />
       <Grid container spacing={3}>
         <Grid item xs={3}>
           <LeftMenu />
